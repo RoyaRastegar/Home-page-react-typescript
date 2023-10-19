@@ -6,8 +6,7 @@
 }
 body {
   height: 100vh;
-  background-color: #000;
-  background-image: url("../public/assets/background-laptop.jpg");
-  background-size: cover;
+  background-color: #fff;
   background-position: center;
+  color: #000;
 }
