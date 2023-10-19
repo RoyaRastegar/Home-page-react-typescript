@@ -1,0 +1,139 @@
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.btn {
+  width: 17%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+li a:hover {
+  color: #f99d76;
+  font-weight: bold;
+}
+.logo a {
+  font-size: 1rem;
+  font-weight: bold;
+  color: blue;
+}
+.links {
+  display: flex;
+  gap: 2rem;
+}
+.action_btn_cv {
+  border: 1px solid #000;
+  border-radius: 20px;
+  background-color: #fcdf69;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  transition: scale 0.2 ease;
+}
+.action_btn_contact {
+  border: 1px solid #000;
+  border-radius: 20px;
+  background-color: #f99d76;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+}
+.action_btn_contact:hover {
+  color: #fcdf69;
+  scale: 1.05;
+}
+.action_btn_cv:hover {
+  color: #f99d76;
+  scale: 1.05;
+}
+.action_btn_contact:active {
+  scale: 0.95;
+}
+.action_btn_cv:active {
+  scale: 0.95;
+}
+
+.toggle_btn {
+  border: none;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  width: 50px;
+  margin-right: 1rem;
+  border-radius: 10px;
+  display: none;
+}
+
+.dropdown_menu {
+  display: none;
+  height: 0;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  background-color: rgba(158, 154, 154, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open {
+  height: 240px;
+}
+.dropdown_menu li {
+  margin: 0.4rem auto;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown_menu .action_btn_contact,
+.dropdown_menu .action_btn_cv {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  border: none;
+  margin: 0.5rem auto;
+}
+
+/*Responsible Navbar  */
+
+@media (max-width: 770px) {
+  .navbar .links,
+  .navbar .action_btn_contact,
+  .navbar .action_btn_cv,
+  .navbar .btn {
+    display: none;
+  }
+  .navbar .toggle_btn {
+    display: block;
+  }
+  .dropdown_menu {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+}
