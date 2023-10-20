@@ -1,0 +1,67 @@
+.carrer-container {
+  background-image: url("../../../public/assets/bg-01.png");
+  max-width: 1800px;
+  min-height: 500px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-flow: row wrap;
+}
+.carrer-img {
+  background-image: url("../../../public/assets/carrer-01.png");
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  margin-left: 200px;
+  background-position: center;
+  background-size: cover;
+}
+.career {
+  padding-top: 50px;
+  margin-left: 100px;
+  color: #fff;
+  line-height: 60px;
+  width: 400px;
+  height: 400px;
+}
+.career p {
+  font-size: small;
+  padding-left: 10px;
+}
+.career h2 {
+  word-spacing: 1px;
+  font-size: 40px;
+}
+
+.custom-search {
+  position: relative;
+  width: 300px;
+  margin: 8px 0;
+}
+.custom-search-input {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 10px 100px 10px 20px;
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+}
+.custom-search-botton {
+  height: 40px;
+  position: absolute;
+  right: 1px;
+  top: 10px;
+  /* bottom: 1px; */
+  border: 0;
+  background: #fcdf69;
+  color: #000;
+  outline: none;
+  margin: 0;
+  padding: 0 5px;
+  border-radius: 0 100px 100px 0;
+  z-index: 2;
+}
